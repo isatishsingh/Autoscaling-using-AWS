@@ -1,0 +1,27 @@
+{
+  "name": "autoscalling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun build src/index.ts --outdir dist --target=bun",
+    "start": "bun run dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.4.1",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@aws-sdk/client-auto-scaling": "^3.1126.0",
+    "@aws-sdk/client-ec2": "^3.1127.0",
+    "@types/dotenv": "^8.2.3",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
