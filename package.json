@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "bun run --watch src/index.ts",
-    "build": "bun build src/index.ts --outdir dist --target=bun",
-    "start": "bun run dist/index.js"
+    "dev": "node api.js && bun run --watch src/index.ts",
+    "build": "node api.js && bun build src/index.ts --outdir dist --target=bun",
+    "start": "node api.js && bun run dist/index.js"
   },
   "keywords": [],
   "author": "",
