@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "bun run --watch src/index.ts",
-    "build": "bun build src/index.ts --outdir dist --target=bun",
-    "start": "bun run dist/index.js"
+    "dev": "node init && bun run --watch src/index.ts",
+    "build": "node init && bun build src/index.ts --outdir dist --target=bun",
+    "start": "node init && bun run dist/index.js"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +22,7 @@
     "@aws-sdk/client-ec2": "^3.1127.0",
     "@types/dotenv": "^8.2.3",
     "dotenv": "^17.4.2",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "node-fetch": "^3.3.2"
   }
 }
